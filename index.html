@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grumpy Coin - The Meme of the Future</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #ff8c00, #d35400);
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            animation: headerMove 5s infinite alternate;
+            position: relative;
+        }
+        @keyframes headerMove {
+            0% {
+                background-position: left;
+            }
+            100% {
+                background-position: right;
+            }
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 700;
+            text-shadow: 2px 2px #000;
+            animation: textGlow 1.5s infinite alternate;
+        }
+        @keyframes textGlow {
+            0% {
+                text-shadow: 2px 2px #000, 0 0 10px #ff8c00;
+            }
+            100% {
+                text-shadow: 2px 2px #000, 0 0 20px #d35400;
+            }
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        header img {
+            max-width: 150px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            animation: spin 10s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        nav {
+            background: #1f1f1f;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: #ff8c00;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: 40px auto;
+            background: #1c1c1c;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: sectionPulse 3s infinite;
+        }
+        @keyframes sectionPulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+            50% {
+                transform: scale(1.02);
+                box-shadow: 0 8px 20px rgba(255, 140, 0, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+        section h2 {
+            color: #ff8c00;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+        section ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            margin-top: 20px;
+            background: #ff8c00;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            animation: buttonHover 3s infinite;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #d35400;
+        }
+        @keyframes buttonHover {
+            0% {
+                box-shadow: 0 0 10px #ff8c00;
+            }
+            50% {
+                box-shadow: 0 0 20px #d35400;
+            }
+            100% {
+                box-shadow: 0 0 10px #ff8c00;
+            }
+        }
+        footer {
+            background: #1f1f1f;
+            color: #808080;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Grumpy Coin</h1>
+        <p>The Meme Coin of the Future</p>
+        <img src="image.png" alt="Grumpy Coin Logo">
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Grumpy Coin</h2>
+        <p>Grumpy Coin is more than a cryptocurrency; it’s a movement. Built with top-tier blockchain technology, Grumpy Coin combines humor with innovation, ensuring everyone gets a laugh while staying ahead in the digital economy.</p>
+    </section>
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Lightning-fast meme transfers</li>
+            <li>Hilariously low fees</li>
+            <li>Decentralization for the meme lords</li>
+            <li>Environmentally conscious laughs</li>
+        </ul>
+    </section>
+    <section id="roadmap">
+        <h2>Roadmap</h2>
+        <p>Our legendary meme-conomy strategy:</p>
+        <ul>
+            <li><strong>Q1 2025:</strong> Launch with maximum grumpiness</li>
+            <li><strong>Q2 2025:</strong> Meme integrations and viral marketing</li>
+            <li><strong>Q3 2025:</strong> NFT collaborations and partnerships</li>
+            <li><strong>Q4 2025:</strong> Memeverse expansion</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to join the meme revolution? Reach out to us:</p>
+        <a class="btn" href="mailto:team@grumpycoin.com">Join the Memevolution</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Grumpy Coin. All rights reserved. | Powered by Memes</p>
+    </footer>
+</body>
+</html>
